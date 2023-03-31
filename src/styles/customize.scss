@@ -1,0 +1,29 @@
+@import '@/components/MainMenu/MainMenu.scss';
+@import '@/components/ScrollButton/ScrollButton.scss';
+// Customize reference to theme.css
+
+.p-component {
+    font-family: var(--font-family);
+}
+
+.p-button:enabled:hover, .p-button:not(button):not(a):not(.p-disabled):hover {
+    background: #a5682a;
+    color: #ffffff;
+    border-color: #a5682a;
+}
+
+
+// NOTION
+.notion{
+    font-size: 1.2rem;
+    line-height: 180%;
+}
+
+.notion-page {
+    width: 100%;
+}
+
+.notion-list li {
+    padding: 0;
+}
+

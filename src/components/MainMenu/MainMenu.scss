@@ -1,0 +1,46 @@
+.main-menu {
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;    
+    height: 68px;
+    z-index: 99;
+    .p-menubar {
+        background: var(--green-900);
+        border: none;
+        font-size: 1rem;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+
+        .p-menuitem {
+            padding: 10px;
+            .p-menuitem-link {
+                .p-menuitem-text {
+                    color: white;
+                }
+            }
+
+            .p-menuitem-link:not(.p-disabled):hover {
+                background: none;
+                .p-menuitem-text {
+                    color: green;
+                }
+            }
+
+            .p-submenu-list {
+                background-color: #1f552e;
+            }
+        }
+    }
+
+    @media screen and (max-width: 980px) {
+        .p-menubar {
+            .p-menubar-root-list {
+                position: absolute;
+                margin-top: 20px;
+                left: auto;
+                right: 0;
+            }
+        }
+    }
+}
