@@ -5,7 +5,7 @@ import { NotionAPI } from 'notion-client';
 import { NotionRenderer } from 'react-notion-x';
 import NotionPageTitle from '@/components/NotionPageTitle';
 
-import Buddha from '@/images/anhdep/Buddha.jpg';
+// import Buddha from '@/images/anhdep/Buddha.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
 import TitleHeader from '@/components/TitleHeader';
@@ -26,7 +26,7 @@ const Khoahoc = (postsData) => {
                 <TitleHeader title={'THỜI KHOÁ'} />
                 <div className='grid'>
                     <div className='col-12 lg:col-4'>
-                        <Image className='w-full h-auto' sizes='100vw' src={Buddha} alt='buddha' />
+                        {/* <Image className='w-full h-auto' sizes='100vw' src={Buddha} alt='buddha' /> */}
                     </div>
                     <div className='col-12 lg:col-8'>
                         {postsData ? (

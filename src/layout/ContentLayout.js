@@ -1,4 +1,3 @@
-import Header from "@/components/HrLine/Header";
 import Footer from '@/components/Footer/Footer';
 import './ContentLayout.scss';
 

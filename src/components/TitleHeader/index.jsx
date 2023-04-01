@@ -1,12 +1,7 @@
-import HrLine from '../HrLine';
-
-const TitleHeader = ({ title }) => {
-    <HrLine />;
+const TitleHeader = ({ title }) => {    
     return (
-        <>
-            <HrLine />
-            <h2 style={{padding:"5px", textAlign:"center"}}>{title}</h2>
-            <HrLine />
+        <>            
+            <h2 style={{padding:"5px", textAlign:"center"}}>{title}</h2>            
             <br />
         </>
     );
