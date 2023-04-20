@@ -6,7 +6,7 @@ function People() {
             <div className='surface-ground px-4 py-8 md:px-6 lg:px-8'>
                 <div className='font-bold text-900 text-5xl mb-3 text-center'>BAN THƯỜNG TRỰC</div>
                 <div className='text-xl line-height-3 text-600 mb-6 text-center'>
-                    Thành viên cốt cán của Thiện nguyện Tây Nguyên
+                    Thành viên cốt cán của Tình nguyện Tây Nguyên
                 </div>
                 <div className='grid'>                    
                     <div className='col-12 md:col-6 lg:col-3'>

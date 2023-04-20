@@ -6,35 +6,38 @@ export const MenuData = () => {
   
     return [
         {
-            label: 'Dự án',
+            label: 'Trang chủ',
             command: () => {
                 router.push('/');
             },
         },
         {
-            label: 'Tình nguyện',
+            label: 'Về chúng tôi',
             command: () => {
-                router.push('/tinh-nguyen');
+                router.push('/ve-chung-toi');
             },
         },
         {
-            label: 'Chương trình',
-            command: () => {
-                router.push('/chuong-trinh');
+            label: 'Dự án',
+            items:[{
+                label: "Trồng rừng",
+                command: () => {
+                    router.push('/');
+                },
             },
+            {
+                label: "Nước sạch",
+                command: () => {
+                    router.push('/');
+                },
+            },
+            {
+                label: "Vì cộng đồng",
+                command: () => {
+                    router.push('/');
+                },
+            }]
         },
-        {
-            label: 'Câu chuyện',
-            command: () => {
-                router.push('/cau-chuyen');
-            },
-        },
-        {
-            label: 'Đóng góp',
-            command: () => {
-                router.push('/dong-gop');
-            },
-        }, 
         {
             label: 'Ban thường trực',
             command: () => {
@@ -42,15 +45,28 @@ export const MenuData = () => {
             },
         }, 
         {
-            label: 'Ngôn ngữ',            
-            items:[{
-                label: "Tiếng việt",
-                command: () => changeLang('vi')
+            label: 'Tình nguyện viên',
+            command: () => {
+                router.push('/tinh-nguyen-vien');
             },
-            {
-                label: "Tiếng Anh",
-                command: () => changeLang('en')
-            }]
         },
+        {
+            label: 'Hỗ trợ dự án',
+            command: () => {
+                router.push('/ho-tro-du-an');
+            },
+        }, 
+        
+        // {
+        //     label: 'Ngôn ngữ',            
+        //     items:[{
+        //         label: "Tiếng việt",
+        //         command: () => changeLang('vi')
+        //     },
+        //     {
+        //         label: "Tiếng Anh",
+        //         command: () => changeLang('en')
+        //     }]
+        // },
     ];
 };

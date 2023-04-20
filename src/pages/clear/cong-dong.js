@@ -2,7 +2,6 @@ import PageLayout from '@/layout/PageLayout';
 import { useEffect, useState } from 'react';
 
 import { Client } from '@notionhq/client';
-import { NOTION_SECRET, NOTION_DB } from '@/data/blogspot.config';
 import Link from 'next/link';
 
 import { JsHelper } from '@/services/JsHelper';

@@ -32,7 +32,7 @@ export default function MainMenu() {
                         <i className='pi pi-bars text-white text-lg'></i>
                     </button>
                     <div>
-                        <h3 className='text-white'>THIỆN NGUYỆN TÂY NGUYÊN</h3>
+                        <h3 className='text-white'>Tình nguyện TÂY NGUYÊN</h3>
                     </div>
                     <div></div>
                 </div>

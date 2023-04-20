@@ -9,8 +9,8 @@ function Slider() {
     const sliderData = [
         {
             image: 'https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg',
-            title_1: 'Thiện nguyện Tây Nguyên',
-            title_2: 'Chung tay vì cộng đồng Tây Nguyên',
+            title_1: 'TÌNH NGUYỆN TÂY NGUYÊN',
+            title_2: 'CHUNG TAY VÌ CỘNG ĐỒNG TÂY NGUYÊN',
             description_1:
                 'Mạng lưới tình nguyện khu vực Tây Nguyên mong muốn sẽ là nơi kết nối các CLB, Đội, Nhóm các tỉnh Đăk Lăk, Gia Lai, Kom Tum, Đăk Nông, Lâm Đồng để cùng hòa nhịp với "Mạng lưới tình nguyện quốc gia"',
             description_2: '',
@@ -27,18 +27,18 @@ function Slider() {
         return (
             <div className='pta-Slider'>
                 <Link href='/'>
-                    <div className='relative p-8 overflow-hidden'>               
-                        <Image                           
+                    <div className='relative pt-8 pb-8 pr-6 pl-6 overflow-hidden'>               
+                        <Image
                             src='/images/pexels-akil-mazumder-1072824.jpg'
-                            alt='hero-2'
+                            alt='slider'
                             className='absolute top-0 left-0 w-auto h-full block md:w-full'
-                            width={1366} height={0}
+                            width={1366} height={0} priority
                         />
                         <div
                             className='text-center my-6 relative pt-5 pb-5'
                             style={{ background: 'radial-gradient(black, transparent)' }}>
-                            <div className='text-6xl text-white font-bold mb-1 pt-4'>{item.title_1}</div>
-                            <div className='text-6xl text-primary font-bold mb-4'>{item.title_2}</div>
+                            <div className='text-4xl text-white font-bold mb-1 pt-4'>{item.title_1}</div>
+                            <div className='text-3xl text-primary font-bold mb-4'>{item.title_2}</div>
                             <p
                                 className='mt-0 mb-2 line-height-3 text-center mx-auto text-white'
                                 style={{ maxWidth: '600px' }}>

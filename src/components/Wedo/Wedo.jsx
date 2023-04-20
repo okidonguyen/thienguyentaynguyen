@@ -7,7 +7,7 @@ function Wedo() {
                         CHÚNG TÔI LÀM ĐƯỢC NHỮNG GÌ?
                     </div>
                     <p className='text-600 line-height-3 text-lg m-0 mb-6 text-center'>
-                        Kết quả những hoạt động thiện nguyện, những con số biết nói
+                        Kết quả những hoạt động Tình nguyện, những con số biết nói
                     </p>
                     <div className='grid surface-card shadow-2' style={{borderRadius:"10px"}}>
                         <div className='col-12 md:col-3 px-5 py-5'>
@@ -28,7 +28,7 @@ function Wedo() {
                         <div className='col-12 md:col-3 px-5 py-5'>
                             <i className='pi pi-map text-4xl text-purple-500 mb-3'></i>
                             <div className='text-900 font-bold text-4xl mb-3 line-height-3'>3000 km</div>
-                            <p className='text-700 m-0'>Quảng đường thiện nguyện viên đã đi</p>
+                            <p className='text-700 m-0'>Quảng đường Tình nguyện viên đã đi</p>
                         </div>
                     </div>
                 </div>

@@ -64,7 +64,7 @@ function Project() {
 
     return (
         <div className='surface-section px-4 py-8 md:px-6 lg:px-8'>
-            <div className='font-bold text-5xl text-900 mb-5 text-center'>DỰ ÁN ĐÃ THỰC HIỆN</div>
+            <div className='font-bold text-5xl text-900 mb-5 text-center'>DỰ ÁN THỰC HIỆN</div>
             <div className='nogutter'>
                 <Carousel
                     showNavigators={false}

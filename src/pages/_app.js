@@ -16,9 +16,11 @@ import Layout from '@/layout/Layout';
 import DefaultLayout from '@/layout/DefaultLayout';
 import ScrollButton from '@/components/ScrollButton/ScrollButton';
 
+import { Analytics } from '@vercel/analytics/react';
+
 function MyApp({ Component, pageProps }) {
-    
     const CustomLayout = Component.Layout || DefaultLayout;
+    
     return (
         <>
             <Layout>
@@ -27,6 +29,7 @@ function MyApp({ Component, pageProps }) {
                 </CustomLayout>
             </Layout>
             <ScrollButton />
+            {/* <Analytics/> */}
         </>
     );
 }

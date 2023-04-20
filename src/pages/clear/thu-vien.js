@@ -2,7 +2,6 @@ import PageLayout from '@/layout/PageLayout';
 import { useEffect, useState } from 'react';
 
 import { Client } from '@notionhq/client';
-import { NOTION_SECRET } from '@/data/blogspot.config';
 import TitleHeader from '@/components/TitleHeader';
 
 const Thuvien = (postsData) => {
