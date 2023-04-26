@@ -6,6 +6,8 @@ import { Sidebar } from 'primereact/sidebar';
 import { MenuData } from '@/data';
 import { useState } from 'react';
 import useWindowSize from '@/hooks/useWindowSize';
+import Image from 'next/image';
+import Link from 'next/link';
 
 // import components
 
@@ -14,7 +16,11 @@ export default function MainMenu() {
 
     const [visible, setVisible] = useState(false);
     const size = useWindowSize();
-    const Logo = <div></div>;
+    const Logo = (
+        <Link href={'/'}>
+            <Image className='w-full h-auto' width={190} height={50} src={'/images/logo.png'} alt='logo' priority />
+        </Link>
+    );
 
     const menuDisplay =
         size.width < 1030 ? (

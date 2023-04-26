@@ -4,19 +4,7 @@ export const MenuData = () => {
     
     const router = useRouter();
   
-    return [
-        {
-            label: 'Trang chủ',
-            command: () => {
-                router.push('/');
-            },
-        },
-        {
-            label: 'Về chúng tôi',
-            command: () => {
-                router.push('/ve-chung-toi');
-            },
-        },
+    return [        
         {
             label: 'Dự án',
             items:[{
@@ -39,22 +27,21 @@ export const MenuData = () => {
             }]
         },
         {
-            label: 'Ban thường trực',
-            command: () => {
-                router.push('/ban-thuong-truc');
-            },
-        }, 
-        {
-            label: 'Tình nguyện viên',
-            command: () => {
-                router.push('/tinh-nguyen-vien');
-            },
+            label: 'Hành trình',
+            url:'/hanh-trinh'
         },
         {
-            label: 'Hỗ trợ dự án',
-            command: () => {
-                router.push('/ho-tro-du-an');
-            },
+            label: 'Tình nguyện',
+            url:'/tinh-nguyen-vien'
+        },
+        
+        {
+            label: 'Câu chuyện',
+            url:'/ve-chung-toi'
+        },
+        {
+            label: 'Hỗ trợ chúng tôi',
+            url:'/ho-tro-chung-toi'
         }, 
         
         // {

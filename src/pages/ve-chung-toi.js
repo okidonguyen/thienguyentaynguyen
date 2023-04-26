@@ -8,7 +8,7 @@ import { NotionRenderer } from 'react-notion-x';
 import { getNotionPage } from '@/services/NotionHelper';
 
 
-const Baygio = (postsData) => {
+const VeChungToi = (postsData) => {
     // Declare
     const [posts, setPosts] = useState();
 
@@ -43,5 +43,5 @@ export async function getServerSideProps({ req, res }) {
     return { props: { postsData } };
 }
 
-Baygio.Layout = PageLayout;
-export default Baygio;
+VeChungToi.Layout = PageLayout;
+export default VeChungToi;

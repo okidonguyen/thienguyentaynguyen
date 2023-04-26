@@ -1,26 +1,28 @@
-import PageLayout from '@/layout/PageLayout';
+import DynamicLayout from '@/layout/DynamicLayout';
 import { useEffect, useState } from 'react';
+
 import Image from 'next/image';
 import Link from 'next/link';
 
 import { NotionRenderer } from 'react-notion-x';
 import { getNotionPage } from '@/services/NotionHelper';
-import CustomMeta from '@/components/CustomMeta/CustomMeta';
+import SupportMe from '@/components/SupportMe/SupportMe';
+import TrustBy from '@/components/TrustBy/TrustBy';
 
-const ODay = (postsData) => {
+const HotroDuan = (postsData) => {
     // Declare
     const [posts, setPosts] = useState();
 
-    // Waiting page loading and set Post
+    // Waiting page loading and set Pót
     useEffect(() => {
         console.log(postsData.postsData);
         setPosts(postsData.postsData);
     }, [postsData]);
 
     return (
-        <>
-            <CustomMeta title={'Ban thường trực'} description={'Thường trực mạng lưới tình nguyện Tây Nguyên'} />
-            <div className='justify-content-center text-justify line-height-4'>
+        <div>
+            <SupportMe/>
+            <div className='justify-content-center text-justify line-height-4' style={{ padding: '0px 10%' }}>
                 <>
                     {postsData ? (
                         <NotionRenderer
@@ -35,15 +37,16 @@ const ODay = (postsData) => {
                     )}
                 </>
             </div>
-        </>
+            <TrustBy/>
+        </div>
     );
 };
 
 export async function getServerSideProps({ req, res }) {
     res.setHeader('Cache-Control', 'public, s-maxage=10, stale-while-revalidate=59');
-    const postsData = await getNotionPage('a46acab4ffff43e08090c8befb345935');
+    const postsData = await getNotionPage('4e8dc8053e8e42e8bdf6d06d71692f9e');
     return { props: { postsData } };
 }
 
-ODay.Layout = PageLayout;
-export default ODay;
+HotroDuan.Layout = DynamicLayout;
+export default HotroDuan;

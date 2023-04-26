@@ -1,11 +1,14 @@
+import Image from "next/image";
+
 const Footer = () => {
+    
     return (
         <div>
             <div className='bg-green-900 px-4 py-8 md:px-6 lg:px-8'>
                 <div className='bg-green-900'>
                     <div className='grid'>
                         <div className='col-12 md:col-8 md:mb-0 mb-3'>
-                            <div className='text-green-300 font-bold text-5xl'>TÌNH NGUYỆN TÂY NGUYÊN</div>
+                        <Image className='h-auto' width={500} height={200} src={'/images/logo.png'}  alt='logo' priority/>
                             <div className='text-white mb-3 pt-3'>
                             <i className='pi pi-building border-round p-1 mr-2'></i>
                                 Đắk Lắk, Đắk Nông, Lâm Đồng, Gia Lai, Kontum
