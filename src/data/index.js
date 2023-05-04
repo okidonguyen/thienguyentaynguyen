@@ -4,40 +4,25 @@ export const MenuData = () => {
     
     const router = useRouter();
   
-    return [        
+    return [                  
+        {
+            label: 'Về chúng tôi',
+            url:'/ve-chung-toi'
+        },      
         {
             label: 'Dự án',
             items:[{
                 label: "Trồng rừng",
-                command: () => {
-                    router.push('/');
-                },
-            },
-            {
-                label: "Nước sạch",
-                command: () => {
-                    router.push('/');
-                },
-            },
-            {
-                label: "Vì cộng đồng",
-                command: () => {
-                    router.push('/');
-                },
-            }]
+                url:'/trong-rung',
+            },]
         },
         {
-            label: 'Hành trình',
-            url:'/hanh-trinh'
+            label: 'Tin tức',
+            url:'/tin-tuc'
         },
         {
-            label: 'Tình nguyện',
+            label: 'Tình nguyện viên',
             url:'/tinh-nguyen-vien'
-        },
-        
-        {
-            label: 'Câu chuyện',
-            url:'/ve-chung-toi'
         },
         {
             label: 'Hỗ trợ chúng tôi',

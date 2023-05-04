@@ -39,15 +39,14 @@ const ScrollButton = () => {
                 }}>
                 <i className='pi pi-bars' />
             </Button> */}
-            <Link href='/'>
+            <Link href='/ho-tro-chung-toi'>
                 <Button
                     className='btn-not'
                     style={{
                         // display: scrollTop > 300 ? 'inline' : 'none',
                         display: 'inline',
-                        borderRadius: '50%',
-                    }}>
-                    <i className='pi pi-bell' />
+                        borderRadius: '25px',
+                    }}> HỖ TRỢ
                 </Button>
             </Link>
         </div>

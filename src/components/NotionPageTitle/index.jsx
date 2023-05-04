@@ -3,7 +3,7 @@ import { getPageTitle } from 'notion-utils';
 const NotionPageTitle = ({ data }) => {
     return (
         <>            
-            <h2 className='pt-3' style={{ textAlign: 'center', textTransform: 'uppercase' }}>{getPageTitle(data)}</h2>                     
+            <h4 className='pt-3' style={{ textAlign: 'left', textTransform: 'uppercase' }}>{getPageTitle(data)}</h4>                     
         </>
     );
 };

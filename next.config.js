@@ -22,16 +22,14 @@ const nextConfig = {
 
         return config;
     },
-    // images: {
-    //     remotePatterns: [
-    //         {
-    //             protocol: 'http',
-    //             hostname: 'localhost',
-    //             port: '3000',
-    //             pathname: '/images/**',
-    //         },
-    //     ],
-    // },
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 's3.us-west-2.amazonaws.com'
+            },
+        ],
+    },
 };
 
 module.exports = nextConfig;
