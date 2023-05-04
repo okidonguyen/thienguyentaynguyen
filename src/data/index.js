@@ -28,6 +28,10 @@ export const MenuData = () => {
             label: 'Hỗ trợ chúng tôi',
             url:'/ho-tro-chung-toi'
         }, 
+        {
+            label: 'Liên hệ',
+            url:'/lien-he'
+        }, 
         
         // {
         //     label: 'Ngôn ngữ',            
